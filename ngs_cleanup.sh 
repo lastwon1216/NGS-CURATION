@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -v PATH=/common/bermanblab:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
+#$ -S /bin/bash
+set -xe
+
+#! ngs_cleanup.sh
+
+cd ~
+
+rm ngs_all_scan.sh.e* ngs_all_scan.sh.o* fastq.gz.txt fq.gz.txt fasta.gz.txt fa.gz.txt fq.txt fa.txt fasta.txt bam.txt bedgraph.txt bg.txt wig.txt bigwig.txt bw.txt tar.txt tar.gz.txt vcf.txt vcf.gz.txt /common/$USER/fq.gz.txt /common/$USER/fastq.gz.txt /common/$USER/fasta.gz.txt /common/$USER/fa.gz.txt /common/$USER/fq.txt /common/$USER/fa.txt /common/$USER/fasta.txt /common/$USER/bam.txt /common/$USER/bedgraph.txt /common/$USER/bg.txt /common/$USER/wig.txt /common/$USER/bigwig.txt /common/$USER/bw.txt /common/$USER/tar.txt /common/$USER/tar.gz.txt /common/$USER/vcf.txt /common/$USER/vcf.gz.txt;
